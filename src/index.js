@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import db from './db/db.js'
-import express from 'express';
-const app = express();
+import { app } from "./app.js";
 
 
 
@@ -10,5 +9,3 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT,()=>{
     console.log(`Server running on port ${PORT}`)
 })
-
-
